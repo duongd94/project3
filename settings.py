@@ -24,7 +24,7 @@ class Settings:
         self.bullets_limit = 5
 
         # bunker
-        self.bunker_block_size = 9.5
+        self.bunker_block_size = 9
         self.bunker_color = (255, 239, 213)
 
         # beams
