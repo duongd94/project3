@@ -81,7 +81,7 @@ class Intro:
 class Title:
     """Represents the title text to be displayed on screen"""
 
-    def __init__(self, bg_color, screen, text, text_size=56, text_color=(255, 0, 0)):
+    def __init__(self, bg_color, screen, text, text_size=50, text_color=(255, 0, 0)):
         self.bg_color = bg_color
         self.screen = screen
         self.text = text
@@ -103,7 +103,7 @@ class Title:
 class Subtitle:
     """Represents the subtitle text displayed on screen"""
 
-    def __init__(self, bg_color, screen, text, text_size=48, text_color=(0, 255, 0)):
+    def __init__(self, bg_color, screen, text, text_size=45, text_color=(0, 255, 0)):
         self.bg_color = bg_color
         self.screen = screen
         self.text = text
@@ -144,7 +144,7 @@ class EnemyDisplay:
                      text_color=(255, 255, 255)),
             Subtitle(ai_settings.bg_color, self.screen, ' = ' + str(ai_settings.alien_points['3']),
                      text_color=(255, 255, 255)),
-            Subtitle(ai_settings.bg_color, self.screen, ' = ???', text_color=(255, 255, 255))
+            Subtitle(ai_settings.bg_color, self.screen, '= ???', text_color=(255, 255, 255))
         ]
         self.score_images = []
         self.y_start = y_start

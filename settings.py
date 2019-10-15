@@ -20,10 +20,10 @@ class Settings:
 
         # bullets
         self.bullet_speed_factor = None
-        self.bullet_width = 3
+        self.bullet_width = 5
         self.bullet_height = 15
         self.bullet_color = (255, 255, 255)
-        self.bullets_limit  = 5
+        self.bullets_limit = 5
 
         # bunker
         self.bunker_block_size = 10
@@ -63,12 +63,12 @@ class Settings:
         self.fleet_drop_speed = 10
         self.fleet_direction = None
         self.alien_points = None
-        self.ufo_point_values = [50, 100, 150]
+        self.ufo_point_values = [100, 300, 500]
         self.beam_stamp = None
         self.beam_time = 1000
 
         # increase speed
-        self.speedup_scale = 1.1
+        self.speedup_scale = 1.2
 
         # game dynamic settings
         self.initialize_dynamic_settings()
@@ -85,7 +85,7 @@ class Settings:
         self.ufo_speed = self.alien_speed_factor * 2
 
         # scoring for diff aliens
-        self.alien_points = {'1': 10, '2': 20, '3': 40}
+        self.alien_points = {'1': 5, '2': 15, '3': 30}
 
         # fleet direction
         self.fleet_direction = 1

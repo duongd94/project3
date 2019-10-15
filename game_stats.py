@@ -26,7 +26,7 @@ class GameStats:
                 self.hs = self.hs_all[0]
         except (FileNotFoundError, ValueError, EOFError, json.JSONDecodeError, AttributeError, IndexError) as e:
             print(e)
-            self.hs_all = [0, 0, 0]
+            self.hs_all = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             self.hs = self.hs_all[0]
 
     def save_hs(self):
