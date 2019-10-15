@@ -38,7 +38,7 @@ class BunkerBlock(sprite.Sprite):
         if not self.hit:
             px_array = PixelArray(self.image)
             if top:
-                for i in range(int(self.height * 4)):
+                for i in range(int(self.height * 3)):
                     px_array[randrange(0, self.width - 1),
                              randrange(0, self.height // 2)] = (0, 0, 0, 0)
             else:
