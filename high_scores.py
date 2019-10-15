@@ -11,12 +11,12 @@ class HighScore:
                                          text_color=(166, 130, 133)))
 
         # initialize hs list
-        y_offset = ai_settings.screen_height * 0.05
+        y_offset = ai_settings.screen_height * 0.08
         for text in self.score_text:
             text.prep_image()
             text.image_rect.centerx = ai_settings.screen_width // 2
             text.image_rect.centery = y_offset
-            y_offset += ai_settings.screen_height * 0.05
+            y_offset += ai_settings.screen_height * 0.07
 
     def display_scores(self):
         """display high score"""
