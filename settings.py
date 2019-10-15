@@ -7,11 +7,9 @@ from pygame import time
 class Settings:
     """Init. setting"""
     def __init__(self):
-        pygame.init()
         # screen
         self.screen_width = 1200
         self.screen_height = 800
-        print('Automatic screen resolution: ' + str(self.screen_width) + ' ' + str(self.screen_height))
         self.bg_color = (0, 0, 0)
 
         # ship
@@ -22,11 +20,11 @@ class Settings:
         self.bullet_speed_factor = None
         self.bullet_width = 5
         self.bullet_height = 15
-        self.bullet_color = (255, 255, 255)
+        self.bullet_color = (255,236,139)
         self.bullets_limit = 5
 
         # bunker
-        self.bunker_block_size = 10
+        self.bunker_block_size = 9.5
         self.bunker_color = (255, 239, 213)
 
         # beams

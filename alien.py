@@ -104,7 +104,7 @@ class Alien(pygame.sprite.Sprite):
         self.rect.x = self.x
         time_test = pygame.time.get_ticks()
         if not self.dead:
-            if abs(self.last_frame - time_test) > 1000:
+            if abs(self.last_frame - time_test) > 500:
                 self.last_frame = time_test
                 self.image_index = (self.image_index + 1) % len(self.images)
                 self.image = self.images[self.image_index]
